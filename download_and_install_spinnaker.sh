@@ -19,7 +19,7 @@ cd spinnaker-$SPINNAKER_VERSION-$SPINNAKER_LINUX_ARCH
 echo libspinnaker libspinnaker/present-flir-eula note '' | sudo debconf-set-selections
 echo libspinnaker libspinnaker/accepted-flir-eula boolean true | sudo debconf-set-selections
 
-dpkg -i *.deb
+sudo dpkg -i *.deb
 
 cd ..
 
