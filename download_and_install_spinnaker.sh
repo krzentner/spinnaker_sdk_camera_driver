@@ -6,8 +6,8 @@ CWD=`pwd`
 export DEBIAN_FRONTEND=noninteractive
 
 # install basic packages
-apt-get update
-apt-get install -q -y --no-install-recommends \
+sudo apt-get update
+sudo apt-get install -q -y --no-install-recommends \
     build-essential tree wget dirmngr gnupg2 vim nano git debconf-utils libunwind-dev iputils-ping dialog apt-utils
 
 wget https://coe.northeastern.edu/fieldrobotics/spinnaker_sdk_archive/spinnaker-$SPINNAKER_VERSION-$SPINNAKER_LINUX_ARCH-pkg.tar.gz -nv
