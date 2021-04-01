@@ -16,10 +16,10 @@ tar -zxvf spinnaker-$SPINNAKER_VERSION-$SPINNAKER_LINUX_ARCH-pkg.tar.gz
 cd spinnaker-$SPINNAKER_VERSION-$SPINNAKER_LINUX_ARCH
 
 # auto accept spinnaker license agreements
-echo libspinnaker libspinnaker/present-flir-eula note '' | debconf-set-selections
-echo libspinnaker libspinnaker/accepted-flir-eula boolean true | debconf-set-selections
+echo libspinnaker libspinnaker/present-flir-eula note '' | sudo debconf-set-selections
+echo libspinnaker libspinnaker/accepted-flir-eula boolean true | sudo debconf-set-selections
 
-dpkg -i   *.deb
+dpkg -i *.deb
 
 cd ..
 
